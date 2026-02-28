@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conversor de sistemas de numeración: Decimal, Binario, Octal y Hexadecimal con conversión en tiempo real.">
+    <title>Conversor de Sistemas de Numeración</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Header -->
+        <header class="app-header">
+            <div class="icon-badge">🔢</div>
+            <h1>Conversor de Numeración</h1>
+            <p>Convierte entre Decimal, Binario, Octal y Hexadecimal al instante</p>
+        </header>
+
+        <!-- Main Card -->
+        <div class="converter-card">
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="section-label">
+                    <span class="dot"></span>
+                    Sistema de origen
+                </div>
+
+                <!-- Base selector buttons -->
+                <div class="base-select-row" id="baseSelector">
+                    <button class="base-option active" data-base="10" id="btn-base-10">
+                        <span class="base-num">10</span>
+                        Decimal
+                    </button>
+                    <button class="base-option" data-base="2" id="btn-base-2">
+                        <span class="base-num">2</span>
+                        Binario
+                    </button>
+                    <button class="base-option" data-base="8" id="btn-base-8">
+                        <span class="base-num">8</span>
+                        Octal
+                    </button>
+                    <button class="base-option" data-base="16" id="btn-base-16">
+                        <span class="base-num">16</span>
+                        Hexadecimal
+                    </button>
+                </div>
+
+                <!-- Value input -->
+                <div class="input-wrapper">
+                    <input type="text" id="inputValue" placeholder="Ingresa un valor..." autocomplete="off"
+                        spellcheck="false">
+                    <button class="clear-btn" id="clearBtn" title="Limpiar">✕</button>
+                </div>
+
+                <!-- Validation message -->
+                <div class="validation-msg" id="validationMsg">
+                    <span>⚠</span>
+                    <span id="validationText"></span>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider">
+                <div class="line"></div>
+                <span class="icon">⇅</span>
+                <div class="line"></div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section">
+                <div class="section-label">Resultados de conversión</div>
+                <div class="result-grid" id="resultGrid">
+                    <div class="empty-state" id="emptyState">
+                        <div class="empty-icon">⌨️</div>
+                        <p>Escribe un valor arriba para ver las conversiones</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            Conversión en tiempo real · Usa <kbd>parseInt()</kbd> y <kbd>toString()</kbd>
+        </footer>
+
+    </div>
+
+    <!-- Script externo -->
+    <script src="converter.js"></script>
+</body>
+
+</html>
