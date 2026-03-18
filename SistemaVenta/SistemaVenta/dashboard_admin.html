@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Administrador - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <nav class="nav-bar">
+        <div class="logo-area">
+            <h1>Tech<span>Store</span></h1>
+        </div>
+        <div class="user-info">
+            <span class="badge admin">Admin</span>
+            <span id="displayUsername">Cargando...</span>
+            <button id="logoutBtn" class="logout-btn">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+    <div class="dashboard-content">
+        <div class="card">
+            <div class="card-icon">👥</div>
+            <h3>Gestión de Usuarios</h3>
+            <p>Administra los roles del sistema, crear nuevos vendedores, clientes o asignar permisos avanzados.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">📦</div>
+            <h3>Inventario Total</h3>
+            <p>Visualiza y administra todos los componentes de PC, tarjetas gráficas, RAM y accesorios en almacén.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">📊</div>
+            <h3>Reporte de Ventas</h3>
+            <p>Accede a estadísticas globales, ganancias mensuales e historial detallado de todas las transacciones.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚙️</div>
+            <h3>Configuración del Sistema</h3>
+            <p>Ajustes generales, políticas de contraseñas, variables de entorno y mantenimiento de la base de datos.</p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

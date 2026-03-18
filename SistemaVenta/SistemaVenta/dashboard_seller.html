@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Vendedor - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <nav class="nav-bar">
+        <div class="logo-area">
+            <h1>Tech<span>Store</span></h1>
+        </div>
+        <div class="user-info">
+            <span class="badge seller">Vendedor</span>
+            <span id="displayUsername">Cargando...</span>
+            <button id="logoutBtn" class="logout-btn">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+    <div class="dashboard-content">
+        <div class="card">
+            <div class="card-icon">🛒</div>
+            <h3>Punto de Venta</h3>
+            <p>Inicia el proceso de venta de accesorios o componentes y emite recibos de pago rápidamente.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🔖</div>
+            <h3>Catálogo de Productos</h3>
+            <p>Busca precios, descripciones de hardware, CPUs y tarjetas madre en stock y disponibilidad de periféricos.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">📋</div>
+            <h3>Mis Ventas</h3>
+            <p>Revisa tu historial personal de facturación y transacciones completadas durante tu turno en tiempo real.</p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
