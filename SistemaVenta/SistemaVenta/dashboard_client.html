@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cliente - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <nav class="nav-bar">
+        <div class="logo-area">
+            <h1>Tech<span>Store</span></h1>
+        </div>
+        <div class="user-info">
+            <span class="badge client">Cliente</span>
+            <span id="displayUsername">Cargando...</span>
+            <button id="logoutBtn" class="logout-btn">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+    <div class="dashboard-content">
+        <div class="card">
+            <div class="card-icon">🛍️</div>
+            <h3>Tienda en Línea</h3>
+            <p>Explora nuestras categorías de periféricos, tarjetas madre y procesadores listos para agregar a tu carrito.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🧾</div>
+            <h3>Mis Pedidos</h3>
+            <p>Monitorea y da seguimiento al estado de los pedidos que has realizado a lo largo de tu suscripción.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🎧</div>
+            <h3>Soporte Técnico</h3>
+            <p>Abre un ticket de ayuda o conéctate con nuestro personal de soporte para recibir asistencia con componentes.</p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
